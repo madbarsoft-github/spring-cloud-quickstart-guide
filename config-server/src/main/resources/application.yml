@@ -1,0 +1,23 @@
+server:
+  port: 9090
+spring:
+  application:
+    name: config-server
+  cloud:
+    config:
+      server:
+        git:
+          uri: file:/opt/myPROJECT/spring-cloud-quickstart-guide/config-repository
+eureka:
+  instance:
+    preferIpAddress: true
+  client:
+    enabled: false
+    serviceUrl:
+      defaultZone: http://localhost:9091/eureka/
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: info

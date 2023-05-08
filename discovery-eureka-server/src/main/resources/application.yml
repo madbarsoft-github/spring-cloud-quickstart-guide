@@ -1,0 +1,7 @@
+server:
+  port: 8081
+spring:
+  application:
+    name: discovery-eureka-server
+  config:
+    import: ${CONFIG_SERVER:configserver:http://localhost:9090}

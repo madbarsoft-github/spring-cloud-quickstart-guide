@@ -1,0 +1,22 @@
+           DB Info
+=====================================
+Database simpledb
+
+Username:root
+Password:root
+
+Create Table Script
+---------------------------
+create table book (
+   id bigint not null,
+    name varchar(255),
+    type varchar(255),
+    primary key (id)
+) engine=InnoDB
+
+
+Insert Data:
+----------------------------
+INSERT INTO simpledb.book (id,name,type) VALUES (1, 'Java', 'Programming');
+INSERT INTO simpledb.book (id,name,type) VALUES (2, 'CCNA', 'Networking');
+INSERT INTO simpledb.book (id,name,type) VALUES (3, 'Python', 'Programming');

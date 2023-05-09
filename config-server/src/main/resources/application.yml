@@ -8,8 +8,8 @@ spring:
       server:
         git:
           uri: https://github.com/madbarsoft-github/config-repository.git
-          username: madbarsoft
-          password: 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
+          username: =============
+          password: =============
           force-pull: true
 eureka:
   instance:

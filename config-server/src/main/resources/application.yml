@@ -7,7 +7,10 @@ spring:
     config:
       server:
         git:
-          uri: file:/opt/myPROJECT/spring-cloud-quickstart-guide/config-repository
+          uri: https://github.com/madbarsoft-github/config-repository.git
+          username: madbarsoft
+          password: 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
+          force-pull: true
 eureka:
   instance:
     preferIpAddress: true
